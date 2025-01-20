@@ -5,6 +5,36 @@ This plugin allows use of the functionality of the CLI 'go doc', but within Neov
 
 Any and all suggestions for improvements, or functionality that is cohesive to the intent of this project, I beg you let me know so I can implement this for you and all users to benefit from.
 
+---
+
+Installation:
+
+Lazy:
+
+  {
+    'JeffMuter/godoc.nvim',
+    config = function()
+        require('godoc').setup({})
+    end,
+  },
+
+Packer:
+
+use {
+    'JeffMuter/godoc.nvim',
+    config = function()
+        require('godoc').setup({})
+    end
+}
+
+vim-plug
+
+Plug 'JeffMuter/godoc.nvim'
+
+lua require('godoc').setup({})
+
+---
+
 The intent is to give you neovim motions, and search functionality within a window in neovim, instead of doing so in a terminal
 
 The functionality is exactly the same as 'go doc', all of it's CLI functionality.
